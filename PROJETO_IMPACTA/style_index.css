@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(imagens/fundo_home.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+main {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+main h1 {
+    color: #fff;
+    font-size: 100px;
+}
+
+main p {
+    color: #fff;
+    opacity: 70%;
+}
+
+.fundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+
+.fundo img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-position: center;
+    right: 0;
+    left: 120px;
+    top: 63px
+}
+
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.1s * var(--i))
+}
+
+.navigation a.current-page::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 30px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.dropbtn {
+    position: relative;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: #fff;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.1s * var(--i))
+}
+
+.dropbtn img {
+    margin-left: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.dropdown:hover .dropdown-content {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.dropbtn:hover+.dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content-linha1 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.dropdown-content img {
+    width: 25%;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
