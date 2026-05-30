@@ -1,0 +1,6 @@
+{
+    "name": "rafa/tcc1",
+    "require": {
+        "chillerlan/php-qrcode": "^4.3"
+    }
+}

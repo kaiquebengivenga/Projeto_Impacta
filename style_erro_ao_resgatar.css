@@ -1,0 +1,25 @@
+.pop-up{
+    position: fixed;
+    left: 45%;
+    top: 40%;
+}
+
+.card-pop-up{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 2em;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    width: 40%;
+    flex-direction: column;
+}
+
+.fechar img{
+    width: 200%;
+}
+
+.fechar{
+    padding-right: 30px;
+}

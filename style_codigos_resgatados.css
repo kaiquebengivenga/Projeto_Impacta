@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #002a55, #00396e, #005188, #0060a0);
+    color: white;
+    height: 100vh;
+}
+
+header {
+    background-color: white;
+    color: black;
+    margin: 10px;
+    border-radius: 2em;
+    padding: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+header h1{
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.pontos{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    cursor: default;
+    border-radius: 10px;
+    transition: 0.5s;
+    align-items: center;
+}
+
+.pontos:hover{
+    background-color: #2119f3;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.historico{
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.historico:hover{
+    background-color: blue;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.historico:hover a{
+    color: white;
+}
+
+.historico a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.historico a img{
+    margin: 10px;
+    height: 40px;
+}
+
+.pontos p span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meio {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.meio h4 {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.meio h4 img {
+    width: 8%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.dropbtn {
+    position: relative;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: #fff;
+}
+
+.dropbtn img {
+    margin-left: 10px;
+    background: transparent;
+    width: 15%;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.dropdown:hover .dropdown-content {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.dropbtn:hover+.dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content-linha1 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.dropdown-content img {
+    width: 25%;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+main{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main caption{
+    font-size: 1.12rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 8px 0px;
+}
+
+main form{
+    display: flex;
+    align-items: center;
+}
+
+main form table {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+    color: black;
+}
+
+main form table tr th,
+td {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+main form table tr 
+td div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+main form table tr 
+td div img{
+    width: 15%;
+    margin-right: 10px;
+}
+
+main form table tr th {
+    background-color: #181661;
+    color: white;
+    width: 200px;
+}
+
+main form table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+main form table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+main form table tr:hover {
+    background-color: #ddd;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    color: #383838;
+    padding: 5px 20px;
+    border-radius: 2em;
+    height: 50px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.pagination ul{
+    margin: 20px 30px;
+}
+
+.pagination ul li{
+    display: inline-block;
+    margin: 0 auto;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-position: 0 -45px;
+    transition: background-position 0.5s;
+}
+
+.pagination ul li:active{
+    color: #fff;
+    background-image: linear-gradient(#181661, #181661);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.btn1,
+.btn2{
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #383838;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn1 img{
+    width: 24px;
+    margin-right: 15px;
+}
+
+.btn2 img{
+    width: 24px;
+    margin-left: 15px;
+}
+
+.codigo{
+    width: 500px;
+}
